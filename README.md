@@ -1,2 +1,2 @@
-# docs
-sxcrypt documentation
+# Docs
+sxcript documentation
