@@ -1,4 +1,3 @@
-# types
 # Draw
 ## colors
 - HEX
