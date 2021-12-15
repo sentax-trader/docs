@@ -18,3 +18,12 @@
 - select
 - logic
 - string
+
+# Include
+## entities
+- OHLC
+- Plot
+## libraries
+- lib://ta
+- lib://math
+- lib://sourceSelector
