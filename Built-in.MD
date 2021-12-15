@@ -6,6 +6,7 @@ logs are one of the most important things with development and debugging. easily
 - ```log(7)```
 - ```log(x)```
 
+
 # define
 define sxcript type and define some `interProps`
 ### example:
@@ -25,7 +26,7 @@ includes prebuilt tools to your sxcript
 ### example :
  - ```const ohlc = Include('OHLC')```
  - ```const ta = Include('lib://ta')```
- -```const plot = Include('Plot')```
+ - ```const plot = Include('Plot')```
  
  ** [linkTo] defines.md/include entities
 
