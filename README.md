@@ -1,8 +1,6 @@
 # Docs
 sxcript documentation
 
-
-
 # log
 logs are one of the most important things with development and debugging. easily log anything with `log()` function.
 ### example:
@@ -35,7 +33,7 @@ includes prebuilt tools to your sxcript
 
 
 # Import
-import other sxcipts into your sxcript and use them results.\
+import other sxcripts into your sxcript and use their results.\
 `Import(string url)`\
 ## url protocols
 struct = `[storage type]://[id or alias]`
@@ -64,11 +62,11 @@ updates buffer key with the given value
 ### example:
 - `buffer.update(10,1.681541)`
 ## Buffer.fit(`OHLC` ohlc)
-buffers are forced to be in the same size of the ohlc data.
-fit method helps you to keep your buffer fitted with given ohlc object.
+buffers are forced to be in the same size as the "ohlc" data.
+The "fit" method helps you to keep your buffer fitted with the given "ohlc" object.
 
 # Input
-Inputs are the variable that are accepts changes from outside of the sxcript.\
+Inputs are the variables that accept changes from outside of the sxcript.\
 `Buffer(any defaultValue, string title, string type,[meta])`
 
 ** [linkTo] available input types
@@ -86,11 +84,11 @@ set given value into the input
 ** setting an input will take effect by `reIniting` the sxcript. setting `rerun` prop will override this action
 ## Input.bind(`Input` input)
 binds an input to another input.
-changing first input will change second input automatically.
+changing the first input will change the second input automatically.
 ### example:
 - `input.bind(input2)`
 # this
-this is refereced to currently running sxcript and contains some sort of details and methods
+"this" is referred to currently running sxcript and contains some sort of details and methods
 
 ## this.onInit(`Function` callback)
 this callback reuns when:
@@ -101,7 +99,7 @@ this callback reuns when:
 - `this.onInit(()=>{ this.ready(buffer) })`
 
 ## this.ready(`Buffer` buffer)
-every sxcipt should emit its own ready state with `this.ready` method.
+every sxcript should emit its own ready state with `this.ready` method.
  
 ## this.onReady(`Function` callback)
 after callcing `this.ready` ,`onReady` event would be handled and accessible via `onReady` event
@@ -131,7 +129,7 @@ any market data would be available with `OHLC` struct.
 
 **data sort is reversed (`0` is newer index)
 # Plot
-plot allows your sxcript to interact with chart, and draw `lines`, `bars`,`shapes` and `fill` them with colors.  
+"plot" allows your sxcript to interact with the chart, and draw `lines`, `bars`, `shapes`, and `fill` them with colors.  
 
 plot object is available after `Include`
 
@@ -162,7 +160,7 @@ drawing bars are available with `bars`
 - `plot.fill(buffer,{color:'red'})`
 - `plot.fill(buffer1, buffer2,{color:'red'})`
 
-** if second buffer was not defined, `0` would be used by default as second buffer
+** If the second buffer was not defined, `0` would be used by default as the second buffer
 ### props:
 - `string` color [linkTo]color mode types
 
